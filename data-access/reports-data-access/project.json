@@ -1,0 +1,9 @@
+{
+  "name": "reports-data-access",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "data-access/reports-data-access/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project reports-data-access --web",
+  "targets": {}
+}

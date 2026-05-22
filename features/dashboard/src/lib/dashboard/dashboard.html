@@ -1,0 +1,107 @@
+<section class="container-fluid px-0">
+  <div class="card border-0 shadow-sm rounded-4 mb-4">
+    <div class="card-body p-4">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-lg">
+          <span class="badge text-bg-primary rounded-pill mb-2">Dashboard</span>
+          <h1 class="h3 fw-bold mb-1">Welcome back, Enterprise Admin</h1>
+          <p class="text-body-secondary mb-0">
+            Monitor customer, billing, and report operations from one umbrella
+            shell.
+          </p>
+        </div>
+        <div class="col-12 col-lg-auto">
+          <button class="btn btn-primary w-100 w-lg-auto">
+            <i class="bi bi-lightning-charge me-2"></i>
+            Quick action
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3 mb-4">
+    @for (summary of summaries; track summary.label) {
+    <div class="col-12 col-md-6 col-xl-3">
+      <div class="card border-0 shadow-sm rounded-4 h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="text-body-secondary small">{{ summary.label }}</div>
+              <div class="display-6 fw-bold">{{ summary.value }}</div>
+            </div>
+            <span
+              class="rounded-circle bg-{{ summary.tone }} bg-opacity-10 text-{{ summary.tone }} p-3"
+            >
+              <i [class]="summary.icon"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-xl-8">
+      <div class="card border-0 shadow-sm rounded-4">
+        <div class="card-header bg-body border-0 pt-4 px-4">
+          <h2 class="h5 mb-0">Recent activity</h2>
+        </div>
+        <div class="card-body p-4 pt-2">
+          <div class="table-responsive">
+            <table class="table align-middle mb-0">
+              <thead>
+                <tr>
+                  <th>Module</th>
+                  <th>Activity</th>
+                  <th>Status</th>
+                  <th>Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Customer</td>
+                  <td>New enterprise account onboarded</td>
+                  <td><span class="badge text-bg-success">Complete</span></td>
+                  <td>Today</td>
+                </tr>
+                <tr>
+                  <td>Billing</td>
+                  <td>Invoice batch reviewed</td>
+                  <td><span class="badge text-bg-warning">Pending</span></td>
+                  <td>Yesterday</td>
+                </tr>
+                <tr>
+                  <td>Reports</td>
+                  <td>Monthly sales report exported</td>
+                  <td><span class="badge text-bg-info">Shared</span></td>
+                  <td>May 22</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-xl-4">
+      <div class="card border-0 shadow-sm rounded-4 h-100">
+        <div class="card-body p-4">
+          <h2 class="h5">Module shortcuts</h2>
+          <div class="d-grid gap-2 mt-3">
+            <a class="btn btn-outline-primary text-start" href="/customer"
+              >Customer workspace</a
+            >
+            <a class="btn btn-outline-primary text-start" href="/billing"
+              >Billing workspace</a
+            >
+            <a class="btn btn-outline-primary text-start" href="/reports"
+              >Reports workspace</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

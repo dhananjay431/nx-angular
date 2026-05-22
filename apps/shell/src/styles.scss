@@ -1,0 +1,15 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+  min-height: 100vh;
+}
+
+.nav-pills .nav-link {
+  color: var(--bs-body-color);
+}
+
+.nav-pills .nav-link.active {
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-primary-rgb), 0.18);
+}
+/* You can add global styles to this file, and also import other style files */

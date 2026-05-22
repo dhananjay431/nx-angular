@@ -1,0 +1,71 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "customer/Routes": [
+        "./apps/customer/src/app/remote-entry/entry.routes.ts"
+      ],
+      "billing/Routes": [
+        "./apps/billing/src/app/remote-entry/entry.routes.ts"
+      ],
+      "reports/Routes": [
+        "./apps/reports/src/app/remote-entry/entry.routes.ts"
+      ],
+      "@workspace/ui": [
+        "./shared/ui/src/index.ts"
+      ],
+      "@workspace/layout": [
+        "./shared/layout/src/index.ts"
+      ],
+      "@workspace/auth": [
+        "./shared/auth/src/index.ts"
+      ],
+      "@workspace/api": [
+        "./shared/api/src/index.ts"
+      ],
+      "@workspace/models": [
+        "./shared/models/src/index.ts"
+      ],
+      "@workspace/utils": [
+        "./shared/utils/src/index.ts"
+      ],
+      "@workspace/dashboard": [
+        "./features/dashboard/src/index.ts"
+      ],
+      "@workspace/profile": [
+        "./features/profile/src/index.ts"
+      ],
+      "@workspace/settings": [
+        "./features/settings/src/index.ts"
+      ],
+      "@workspace/customer-data-access": [
+        "./data-access/customer-data-access/src/index.ts"
+      ],
+      "@workspace/billing-data-access": [
+        "./data-access/billing-data-access/src/index.ts"
+      ],
+      "@workspace/reports-data-access": [
+        "./data-access/reports-data-access/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

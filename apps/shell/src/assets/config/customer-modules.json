@@ -1,0 +1,18 @@
+{
+  "customerA": {
+    "modules": ["dashboard", "customer", "billing", "profile", "settings"]
+  },
+  "customerB": {
+    "modules": ["dashboard", "reports", "profile", "settings"]
+  },
+  "customerC": {
+    "modules": [
+      "dashboard",
+      "customer",
+      "billing",
+      "reports",
+      "profile",
+      "settings"
+    ]
+  }
+}
